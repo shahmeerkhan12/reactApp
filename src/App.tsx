@@ -4,7 +4,7 @@ import { useState } from "react";
 import Alert from "./components/Alert";
 import Button from "./components/Button";
 import Nav from "./components/Nav";
-
+import Form from "./components/form.tsx";
 function App() {
   const items = [
     "NewYork",
@@ -18,7 +18,7 @@ function App() {
   ];
 
   // function via props
- // js arrow function
+  // js arrow function
   const handleSelectItem = (item: string) => {
     console.log(item);
   };
@@ -26,7 +26,7 @@ function App() {
   const [alertVisible, setAlertVisibility] = useState(false);
 
   return (
-    <div>
+    <div style={{ textAlign: "center" }}>
       <Nav></Nav>
       <ListGroup
         items={items}
@@ -42,12 +42,15 @@ function App() {
           operation successful
         </Alert>
       )}
+      {/* example_list */}
       <Button
         text={"GET STARTED"}
         onClick={() => {
           setAlertVisibility(true);
         }}
       ></Button>
+
+      <Form></Form>
     </div>
   );
 }

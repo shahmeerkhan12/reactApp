@@ -10,6 +10,7 @@ interface props {
 const Button = ({ text, color = "primary", onClick }: props) => {
   return (
     <button
+      style={{ margin: "50px" }}
       className={"btn btn-" + color}
       onClick={onClick}
     >
