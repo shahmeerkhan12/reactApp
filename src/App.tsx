@@ -26,7 +26,7 @@ function App() {
   const [alertVisible, setAlertVisibility] = useState(false);
 
   return (
-    <div style={{ textAlign: "center" }}>
+    <div className="text-center">
       <Nav></Nav>
       <ListGroup
         items={items}

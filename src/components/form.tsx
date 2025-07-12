@@ -1,26 +1,76 @@
 function Form() {
   return (
     <>
-      <form action="#">
-        <h6>Full Name</h6>
-        <input type="text" name="name" id="name" />
-        <br />
-        <h6>Email</h6>
-        <input type="email" />
-        <br />
-        <h6>Contact</h6>
-        <input type="number" id="contact-no" />
-        <br />
-        <h6>Age</h6>
-        <input type="number" name="age" id="age" />
-        <br />
-        <h6>Gender</h6>
-        <input type="radio" name="Male" id="Male" />
-        <label htmlFor="Gender">Male</label>
-        <input type="radio" name="Female" id="Female" />
-        <label htmlFor="Female">Female</label>
-        <input type="radio" name="other" id="other" />
-        <label htmlFor="other">Other</label>
+      <form
+        style={{ width: "100%", textAlign: "center", background: "yellow" }}
+      >
+        <div className="form-group">
+          <label htmlFor="username">Full Name</label>
+          <br />
+          <input
+            type="text"
+            name="name"
+            id="username"
+            placeholder="Enter Name"
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="user-email">Email</label>
+          <br />
+          <input
+            type="email"
+            name="email"
+            id="user-email"
+            placeholder="Enter Email"
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="contact-no">Contact</label>
+          <br />
+          <input
+            type="number"
+            id="contact-no"
+            placeholder="Enter Contact Number"
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="age">Age</label>
+          <br />
+          <input
+            type="number"
+            name="age"
+            id="age"
+            placeholder="Enter Your Age"
+          />
+        </div>
+
+        <div
+          className="form-group"
+          style={{ textAlign: "center", width: "100%" }}
+        >
+          <h3>Gender</h3>
+          <div className="form-check">
+            <input type="checkbox" name="Male" id="Male" />
+            <label htmlFor="Gender" className="form-check-label">
+              Male
+            </label>
+          </div>
+          <div className="form-check">
+            <input type="checkbox" name="Female" id="Female" />
+            <label htmlFor="Female" className="form-check-label">
+              Female
+            </label>
+          </div>
+
+          <div className="form-check">
+            <input type="checkbox" name="other" id="other" />
+            <label htmlFor="other" className="form-check-label">
+              Other
+            </label>
+          </div>
+        </div>
 
         <br />
         <input type="button" className="btn btn-secondary" value="Submit" />
