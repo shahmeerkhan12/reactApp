@@ -1,7 +1,7 @@
 import { useState } from "react";
 // part 2
 // props or properties (inputs to our components) just like parameters to functions
-interface Props {
+interface myComponentProps {
   items: string[]; // items : array of strings
   heading: string; // heading : string
 
@@ -15,7 +15,7 @@ interface Props {
   onSelectItem: (item: string) => void;
 }
 
-function ListGroup({ items, heading, onSelectItem }: Props) {
+function ListGroup({ items, heading, onSelectItem }: myComponentProps) {
   // part 1
   // statehook
   const [selectedIndex, setSelectedIndex] = useState(-1); // returns an array of two components
@@ -36,6 +36,7 @@ function ListGroup({ items, heading, onSelectItem }: Props) {
                 : "list-group-item"
             }
             key={item}
+            // handling event
             onClick={() => {
               setSelectedIndex(index);
               onSelectItem(item);

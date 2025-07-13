@@ -19,8 +19,8 @@ function App() {
 
   // function via props
   // js arrow function
-  const handleSelectItem = (item: string) => {
-    console.log(item);
+  const handleSelectItem = (list_Item: string) => {
+    console.log(list_Item);
   };
 
   const [alertVisible, setAlertVisibility] = useState(false);
@@ -31,7 +31,8 @@ function App() {
       <ListGroup
         items={items}
         heading="BEGIN WITH YOUR DREAM PLACE"
-        onSelectItem={handleSelectItem}
+        onSelectItem={handleSelectItem} // you can exactly define
+        // the function here but when it is longer then define outside
       />
       {alertVisible && (
         <Alert
