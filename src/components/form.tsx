@@ -2,8 +2,8 @@ import react_img from "../assets/react.svg";
 function Form() {
   return (
     <>
-      <div className="row">
-        <form className="col  " style={{ width: "100%", textAlign: "center" }}>
+      <div className="row d-flex">
+        <form className="col-md-6 " style={{ textAlign: "center" }}>
           <h2>Drop Your Details</h2>
           <div className="form-group">
             <label htmlFor="username">Full Name</label>
@@ -72,10 +72,11 @@ function Form() {
           <input type="button" className="btn btn-secondary" value="Submit" />
           <br />
         </form>
-        <div className="col">
+        <div className="col-md-6 text-center h-100">
           <img
             src={react_img}
-            className=" h-100 center-block image-center"
+            className=" h-100, image-center"
+            style={{ width: "100%" }}
             alt="react svg"
           />
         </div>
