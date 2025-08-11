@@ -2,76 +2,24 @@ import react_img from "../assets/react.svg";
 function Form() {
   return (
     <>
-      <div className="row d-flex">
-        <form className="col-md-6 " style={{ textAlign: "center" }}>
-          <h2>Drop Your Details</h2>
-          <div className="form-group">
-            <label htmlFor="username">Full Name</label>
-            <br />
-            <input
-              type="text"
-              name="name"
-              id="username"
-              placeholder="Enter Name"
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="user-email">Email</label>
-            <br />
-            <input
-              type="email"
-              name="email"
-              id="user-email"
-              placeholder="Enter Email"
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="contact-no">Contact</label>
-            <br />
-            <input
-              type="number"
-              id="contact-no"
-              placeholder="Enter Contact Number"
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="age">Age</label>
-            <br />
-            <input
-              type="number"
-              name="age"
-              id="age"
-              placeholder="Enter Your Age"
-            />
-          </div>
-          <div
-            className="form-group"
-            style={{ textAlign: "center", width: "100%" }}
-          >
-            <h3>Gender</h3>
-            <div className="form-check">
-              <input type="checkbox" name="Male" id="Male" />
-              <label htmlFor="Gender" className="form-check-label">
-                Male
-              </label>
-            </div>
-            <div className="form-check">
-              <input type="checkbox" name="Female" id="Female" />
-              <label htmlFor="Female" className="form-check-label">
-                Female
-              </label>
-            </div>
-            <div className="form-check">
-              <input type="checkbox" name="other" id="other" />
-              <label htmlFor="other" className="form-check-label">
-                Other
-              </label>
-            </div>
-          </div>
-          <br />
-          <input type="button" className="btn btn-secondary" value="Submit" />
-          <br />
-        </form>
+      <div className="row d-flex p-5">
+        <div className="text-center col-md-6 ">
+          <h2 className="text-start border-top border-bottom border-secondary">
+            Built with REACT.js
+          </h2>
+          <p className="text-start p-2 m-1 lh-lg border-start border-primary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+            voluptatem alias ea voluptate soluta! Nulla, possimus reiciendis
+            suscipit tempore officiis magnam accusamus labore sed dolore
+            deserunt autem fugiat voluptates velit.
+          </p>
+          <p className="text-start p-2 m-1 lh-lg border-start border-end border-primary b">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+            voluptatum laborum aspernatur maxime non at laboriosam cumque odio,
+            et voluptatibus, id accusamus cum. Dolor quae soluta, fugit nam
+            voluptatem at.
+          </p>
+        </div>
         <div className="col-md-6 text-center h-100">
           <img
             src={react_img}
@@ -81,6 +29,75 @@ function Form() {
           />
         </div>
       </div>
+      <form className="text-center m-20 " style={{ textAlign: "center" }}>
+        <h2>Drop Your Details</h2>
+        <div className="form-group">
+          <label htmlFor="username">Full Name</label>
+          <br />
+          <input
+            type="text"
+            name="name"
+            id="username"
+            placeholder="Enter Name"
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="user-email">Email</label>
+          <br />
+          <input
+            type="email"
+            name="email"
+            id="user-email"
+            placeholder="Enter Email"
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="contact-no">Contact</label>
+          <br />
+          <input
+            type="number"
+            id="contact-no"
+            placeholder="Enter Contact Number"
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="age">Age</label>
+          <br />
+          <input
+            type="number"
+            name="age"
+            id="age"
+            placeholder="Enter Your Age"
+          />
+        </div>
+        <div
+          className="form-group"
+          style={{ textAlign: "center", width: "100%" }}
+        >
+          <h3>Gender</h3>
+          <div className="form-check">
+            <input type="checkbox" name="Male" id="Male" />
+            <label htmlFor="Gender" className="form-check-label">
+              Male
+            </label>
+          </div>
+          <div className="form-check">
+            <input type="checkbox" name="Female" id="Female" />
+            <label htmlFor="Female" className="form-check-label">
+              Female
+            </label>
+          </div>
+          <div className="form-check">
+            <input type="checkbox" name="other" id="other" />
+            <label htmlFor="other" className="form-check-label">
+              Other
+            </label>
+          </div>
+        </div>
+        <br />
+        <input type="button" className="btn btn-secondary" value="Submit" />
+        <br />
+      </form>
     </>
   );
 }
